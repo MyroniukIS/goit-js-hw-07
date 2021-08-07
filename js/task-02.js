@@ -12,13 +12,13 @@ const ingredients = [
   "Приправы",
 ];
 
-const listIngridients = (ingridient) => {
+const listIngredients = (ingredient) => {
   let elementOfList = document.createElement("li");
-  elementOfList.innerText = ingridient;
+  elementOfList.innerText = ingredient;
   return elementOfList;
 };
 
-const elementsOfIngridients = document.querySelector("ul#ingredients");
-const newIngridients = ingredients.map(listIngridients);
+const elementsOfIngredients = document.querySelector("ul#ingredients");
+const newIngredients = ingredients.map(listIngredients);
 
-elementsOfIngridients.append(...newIngridients);
+elementsOfIngredients.append(...newIngredients);
