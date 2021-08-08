@@ -7,10 +7,13 @@ const inputField = document.querySelector("input#name-input");
 const outputField = document.querySelector("span#name-output");
 
 const textInputOutput = () => {
-  const newText = inputField.value;
-  if (newValue) {
+    const newText = inputField.value;
+    
+  if (newText) {
     outputField.innerText = newText;
-  } else {
+  }
+  
+  else {
     outputField.innerText = "незнакомец";
   }
 };
