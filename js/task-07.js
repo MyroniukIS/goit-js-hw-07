@@ -11,4 +11,4 @@ const updateRangeValueToFontSize = () => {
     text.style.fontSize = `${rangeValue.value}px`;
 };
 
-rangeValue.addEventListener("change", updateRangeValueToFontSize);
+rangeValue.addEventListener("input", updateRangeValueToFontSize);
